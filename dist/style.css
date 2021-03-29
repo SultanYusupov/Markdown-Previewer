@@ -1,0 +1,126 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Russo+One");
+body {
+  background: #87b5b5;
+}
+
+.editWrap {
+  width: 600px;
+  margin: 20px auto;
+  min-height: 200px;
+}
+
+.head {
+  background-color: #4aa3a3;
+  border-bottom: 1px solid black;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  padding: 4px 3px 3px 3px;
+  font-size: 18px;
+  font-family: Russo One;
+  -webkit-box-shadow: 1px 1px 10px 2px #3a5f5f;
+  -moz-box-shadow: 1px 1px 10px 2px #3a5f5f;
+  -ms-box-shadow: 1px 1px 10px 2px #3a5f5f;
+  box-shadow: 1px 1px 10px 2px #3a5f5f;
+}
+
+#editor {
+  background-color: #c0d8d8;
+  resize: vertical;
+  width: 98.7%;
+  height: 200px;
+  min-height: 192px;
+  border: 1px solid black;
+  border-top: none;
+  padding: 3px;
+  -webkit-box-shadow: 1px 1px 10px 2px #3a5f5f;
+  -moz-box-shadow: 1px 1px 10px 2px #3a5f5f;
+  -ms-box-shadow: 1px 1px 10px 2px #3a5f5f;
+  box-shadow: 1px 1px 10px 2px #3a5f5f;
+}
+
+#editor:focus {
+  outline: none;
+}
+
+.fa,
+.fas {
+  /*   font: normal normal normal 14px/1 FontAwesome; */
+  padding-right: 5px;
+}
+
+.fa-free-code-camp:before {
+  content: "";
+}
+
+.fa-arrows-alt:before {
+  content: "";
+}
+
+.fa-compress-alt:before {
+  content: f422;
+}
+
+.fa-arrows-alt:hover,
+.fa-compress-alt:hover {
+  color: #00fa9a;
+  cursor: pointer;
+}
+
+.fa-arrows-alt,
+.fa-compress-alt {
+  line-height: 20px;
+}
+
+.fa-free-code-camp {
+  margin: 0 8px 0 5px;
+}
+
+.previewWrap {
+  width: 800px;
+  margin: 20px auto;
+}
+
+#preview {
+  resize: vertical;
+  border: 1px solid black;
+  border-top: none;
+  background-color: #c0d8d8;
+  -webkit-box-shadow: 1px 1px 10px 2px #3a5f5f;
+  -moz-box-shadow: 1px 1px 10px 2px #3a5f5f;
+  -ms-box-shadow: 1px 1px 10px 2px #3a5f5f;
+  box-shadow: 1px 1px 10px 2px #3a5f5f;
+  padding: 1px 5px 0 10px;
+}
+
+.bigSize {
+  width: 97%;
+  margin: 20px auto;
+}
+.bigSize #preview,
+.bigSize #editor {
+  min-height: 100vh;
+  resize: none;
+}
+.bigSize #editor {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.hide {
+  display: none;
+}
+
+th,
+td {
+  border: 1px solid black;
+  padding: 2px;
+}
+
+table {
+  border: 1px solid black;
+  border-collapse: collapse;
+}

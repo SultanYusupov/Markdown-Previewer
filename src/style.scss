@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css?family=Russo+One");
+
+$header-color: #4aa3a3;
+$distance: 20px auto;
+$borders: 1px solid black;
+
+@mixin box-shadow($x, $y, $blur, $spread, $c) {
+  -webkit-box-shadow: $x $y $blur $spread $c;
+  -moz-box-shadow: $x $y $blur $spread $c;
+  -ms-box-shadow: $x $y $blur $spread $c;
+  box-shadow: $x $y $blur $spread $c;
+}
+@mixin box-sizing($size) {
+  -webkit-box-sizing: $size;
+  -moz-box-sizing: $size;
+  box-sizing: $size;
+}
+body {
+  background: #87b5b5;
+}
+.editWrap {
+  width: 600px;
+  margin: $distance;
+  min-height: 200px;
+}
+.head {
+  background-color: $header-color;
+  border-bottom: $borders;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  padding: 4px 3px 3px 3px;
+  font-size: 18px;
+  font-family: Russo One;
+  @include box-shadow(1px, 1px, 10px, 2px, #3a5f5f);
+}
+#editor {
+  background-color: #c0d8d8;
+  resize: vertical;
+  width: 98.7%;
+  height: 200px;
+  min-height: 192px;
+  border: $borders;
+  border-top: none;
+  padding: 3px;
+  @include box-shadow(1px, 1px, 10px, 2px, #3a5f5f);
+}
+#editor:focus {
+  outline: none;
+}
+
+.fa,
+.fas {
+  /*   font: normal normal normal 14px/1 FontAwesome; */
+  padding-right: 5px;
+}
+
+.fa-free-code-camp:before {
+  content: "\f2c5";
+}
+.fa-arrows-alt:before {
+  content: "\f0b2";
+}
+.fa-compress-alt:before {
+  content: f422;
+}
+
+.fa-arrows-alt:hover,
+.fa-compress-alt:hover {
+  color: #00fa9a;
+  cursor: pointer;
+}
+.fa-arrows-alt,
+.fa-compress-alt {
+  line-height: 20px;
+}
+
+.fa-free-code-camp {
+  margin: 0 8px 0 5px;
+}
+
+.previewWrap {
+  width: 800px;
+  margin: $distance;
+}
+
+#preview {
+  resize: vertical;
+  border: $borders;
+  border-top: none;
+  background-color: #c0d8d8;
+  @include box-shadow(1px, 1px, 10px, 2px, #3a5f5f);
+  padding: 1px 5px 0 10px;
+}
+
+.bigSize {
+  width: 97%;
+  margin: $distance;
+  #preview,
+  #editor {
+    min-height: 100vh;
+    resize: none;
+  }
+  #editor {
+    width: 100%;
+    @include box-sizing(border-box);
+  }
+}
+
+.hide {
+  display: none;
+}
+
+th,
+td {
+  border: $borders;
+  padding: 2px;
+}
+table {
+  border: $borders;
+  border-collapse: collapse;
+}
