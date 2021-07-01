@@ -1,4 +1,3 @@
-//import React, { useState } from "https://cdn.skypack.dev/react";
 const { useState, useEffect } = React;
 
 marked.setOptions({
